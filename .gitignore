@@ -1,0 +1,16 @@
+# .gitignore for Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+db.sqlite3
+env/
+venv/
+*.env
+*.DS_Store
+/static/
+*.py[cod]
+/media/
+*.idea/

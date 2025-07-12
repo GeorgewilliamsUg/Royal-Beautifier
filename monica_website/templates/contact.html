@@ -1,0 +1,202 @@
+<!-- Core/monica_website/templates/contact.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Simple Elegant Hero Section -->
+<section class="contact-hero-simple">
+  <div class="container">
+    <div class="row min-vh-75 align-items-center justify-content-center text-center">
+      <div class="col-lg-8">
+        <div class="hero-content-simple">
+          <h1 class="display-4 fw-bold mb-4">Get In Touch</h1>
+          <p class="lead mb-4">
+            Ready to bring your vision to life? Let's start a conversation about your next beautiful event.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact-form" class="golden-button-2 me-3">
+              <i class="bi bi-chat-dots me-2"></i>Send Message
+            </a>
+            <a href="tel:+01234567890" class="btn btn-outline-primary btn-lg rounded-pill">
+              <i class="bi bi-telephone me-2"></i>Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section py-5 bg-light" id="contact-form">
+  <div class="container">
+    <div class="row justify-content-center align-items-center g-5">
+      
+      <!-- Left Info Block -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4 text-primary">
+          Let's Beautify Something Together
+        </h2>
+        <p class="lead text-muted mb-4">
+          Whether you're planning a wedding, a special occasion, or want to bring elegance to your event, 
+          Royal Beautifier Enterprises is here to serve with grace, purpose, and God-honoring excellence.
+        </p>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info-cards">
+          <div class="contact-card mb-3">
+            <div class="d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+              <div class="contact-icon-simple me-3">
+                <i class="bi bi-telephone-fill text-primary"></i>
+              </div>
+              <div>
+                <h6 class="mb-1 fw-bold">Phone</h6>
+                <a href="tel:+01234567890" class="text-decoration-none text-dark">
+                  +(01) 234 567 890
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-card mb-3">
+            <div class="d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+              <div class="contact-icon-simple me-3">
+                <i class="bi bi-envelope-fill text-primary"></i>
+              </div>
+              <div>
+                <h6 class="mb-1 fw-bold">Email</h6>
+                <a href="mailto:info@mydomain.com" class="text-decoration-none text-dark">
+                  info@mydomain.com
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-card mb-4">
+            <div class="d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+              <div class="contact-icon-simple me-3">
+                <i class="bi bi-geo-alt-fill text-primary"></i>
+              </div>
+              <div>
+                <h6 class="mb-1 fw-bold">Address</h6>
+                <address class="mb-0 text-muted">
+                  123 Main Street Apt 4B<br>
+                  Springfield, IL 62701, United States
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features List -->
+        <ul class="list-unstyled">
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
+            <span class="text-muted">Tailored wedding & event decor consultations</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-shield-lock-fill text-success me-2 fs-5"></i>
+            <span class="text-muted">Secure and confidential communication</span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-lightning-fill text-success me-2 fs-5"></i>
+            <span class="text-muted">Response within 24 hours — always</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="contact-form-wrapper bg-white shadow rounded-4 p-4 p-lg-5">
+          <div class="text-center mb-4">
+            <h3 class="fw-bold mb-2">Send us a Message</h3>
+            <p class="text-muted">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+          </div>
+          
+          <form id="royalContactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control border-0 bg-light" id="fullName" placeholder="Your Name" required>
+                  <label for="fullName">Your Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control border-0 bg-light" id="emailAddress" placeholder="Your Email" required>
+                  <label for="emailAddress">Your Email</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="text" class="form-control border-0 bg-light" id="subjectLine" placeholder="Subject">
+                  <label for="subjectLine">Subject</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control border-0 bg-light" placeholder="Message" id="messageBody" style="height: 120px" required></textarea>
+                  <label for="messageBody">Your Message</label>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button class="golden-button-2" type="submit">
+                  <i class="bi bi-send-fill me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Success/Error Messages -->
+          <div class="mt-3 d-none alert alert-success border-0" id="successFeedback">
+            <i class="bi bi-check-circle-fill me-2"></i> Thank you! We'll be in touch shortly.
+          </div>
+          <div class="mt-3 d-none alert alert-danger border-0" id="errorFeedback">
+            <i class="bi bi-x-octagon-fill me-2"></i> Something went wrong. Try again later.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('royalContactForm');
+    const submitBtn = form.querySelector('.golden-button-2');
+    const successMessage = document.getElementById('successFeedback');
+    const errorMessage = document.getElementById('errorFeedback');
+    
+    // Smooth scroll for hero CTA
+    const heroBtn = document.querySelector('.hero-buttons .golden-button-2');
+    if (heroBtn) {
+        heroBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#contact-form').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+    
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Sending...';
+        submitBtn.disabled = true;
+        
+        successMessage.classList.add('d-none');
+        errorMessage.classList.add('d-none');
+        
+        setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            successMessage.classList.remove('d-none');
+            form.reset();
+        }, 2000);
+    });
+});
+</script>
+
+{% endblock %}

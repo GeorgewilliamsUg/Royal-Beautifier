@@ -1,0 +1,489 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="hero-services d-flex align-items-center">
+    <!-- Scrolling background -->
+    <div class="background-marquee">
+        <div class="marquee-slide"><img src="{% static 'images/1.jpg' %}" alt=""></div>
+        <div class="marquee-slide"><img src="{% static 'images/2.jpg' %}" alt=""></div>
+        <div class="marquee-slide"><img src="{% static 'images/3.jpg' %}" alt=""></div>
+        <div class="marquee-slide"><img src="{% static 'images/4.jpg' %}" alt=""></div>
+        <!-- Duplicates for seamless loop -->
+        <div class="marquee-slide"><img src="{% static 'images/1.jpg' %}" alt=""></div>
+        <div class="marquee-slide"><img src="{% static 'images/2.jpg' %}" alt=""></div>
+        <div class="marquee-slide"><img src="{% static 'images/3.jpg' %}" alt=""></div>
+        <div class="marquee-slide"><img src="{% static 'images/4.jpg' %}" alt=""></div>
+    </div>
+
+    <!-- Foreground content -->
+    <div class="container hero-content">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-10 col-xl-8">
+                <h6 class="text-white mb-3 text-uppercase" style="letter-spacing: 2px;">Royal Beautifier Enterprises</h6>
+                <h1 class="display-4 fw-bold text-white mb-4">Beautifying Lives with Excellence & Grace</h1>
+                <p class="lead text-white mb-4" style="opacity: 0.95;">
+                    The Royal Beautifier Enterprises offers wedding decor, etiquette training, financial consultancy, student empowerment programs, and spiritual guidance—all delivered with elegance, purpose, and Godly care to transform lives and events.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                    <a href="#services-grid" class="golden-button-2">Explore Services</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Main Services Section -->
+    <section id="services-grid" class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro text-center mb-5">
+                        <h6 class="text-uppercase" style="color: var(--bs-primary); font-weight: 600; letter-spacing: 1px;">Our Comprehensive Services</h6>
+                        <h1 class="display-5 fw-bold mb-4" style="color: var(--bs-heading-color);">Transforming Lives Through Excellence</h1>
+                        <p class="lead mx-auto" style="max-width: 700px; color: #6c757d;">From wedding celebrations to personal development, financial consultancy to spiritual guidance - we provide holistic services that beautify every aspect of your life with divine care and professional excellence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 rounded-4 shadow-lg border-0" style="background: white; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div class="service-icon mb-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Wedding & Event Planning" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover; border: 4px solid var(--bs-primary);">
+                        </div>
+                        <h5 class="fw-bold mb-3 text-center" style="color: var(--bs-heading-color);">Wedding & Event Planning</h5>
+                        <p class="text-muted text-center mb-4">Transform your special day into a dreamlike celebration with exquisite decor, music coordination, and comprehensive event management that reflects love and excellence.</p>
+                        <div class="text-center">
+                            <a href="#" class="golden-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 rounded-4 shadow-lg border-0" style="background: white; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div class="service-icon mb-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Spiritual Counseling" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover; border: 4px solid var(--bs-primary);">
+                        </div>
+                        <h5 class="fw-bold mb-3 text-center" style="color: var(--bs-heading-color);">Spiritual Counseling & Guidance</h5>
+                        <p class="text-muted text-center mb-4">Receive church counseling, parenting guidance, and spiritual support rooted in faith and wisdom to strengthen your spiritual foundation and family bonds.</p>
+                        <div class="text-center">
+                            <a href="#" class="golden-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 rounded-4 shadow-lg border-0" style="background: white; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div class="service-icon mb-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Financial Consultancy" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover; border: 4px solid var(--bs-primary);">
+                        </div>
+                        <h5 class="fw-bold mb-3 text-center" style="color: var(--bs-heading-color);">Financial Consultancy</h5>
+                        <p class="text-muted text-center mb-4">Professional financial advice and consultancy services for individuals, businesses, and organizations to achieve financial stability and growth.</p>
+                        <div class="text-center">
+                            <a href="#" class="golden-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 rounded-4 shadow-lg border-0" style="background: white; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div class="service-icon mb-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Etiquette Training" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover; border: 4px solid var(--bs-primary);">
+                        </div>
+                        <h5 class="fw-bold mb-3 text-center" style="color: var(--bs-heading-color);">Etiquette & Life Skills Training</h5>
+                        <p class="text-muted text-center mb-4">Comprehensive etiquette training for all ages, developing social graces, professional conduct, and life skills that enhance personal and professional success.</p>
+                        <div class="text-center">
+                            <a href="#" class="golden-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 rounded-4 shadow-lg border-0" style="background: white; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div class="service-icon mb-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Student Empowerment" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover; border: 4px solid var(--bs-primary);">
+                        </div>
+                        <h5 class="fw-bold mb-3 text-center" style="color: var(--bs-heading-color);">Student Empowerment Programs</h5>
+                        <p class="text-muted text-center mb-4">University and tertiary programs that equip students with tools for academic success, personal growth, and mentorship rooted in faith and dignity.</p>
+                        <div class="text-center">
+                            <a href="#" class="golden-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100 p-4 rounded-4 shadow-lg border-0" style="background: white; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div class="service-icon mb-4 text-center">
+                            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Personal Beautification" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover; border: 4px solid var(--bs-primary);">
+                        </div>
+                        <h5 class="fw-bold mb-3 text-center" style="color: var(--bs-heading-color);">Personal Beautification</h5>
+                        <p class="text-muted text-center mb-4">Professional beauty services including makeup artistry, skincare treatments, and styling that enhance your natural beauty and boost confidence.</p>
+                        <div class="text-center">
+                            <a href="#" class="golden-button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Gallery Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro text-center mb-5">
+                        <h6 class="text-white text-uppercase mb-3" style="font-weight: 600; letter-spacing: 1px; opacity: 0.9;">Our Impact</h6>
+                        <h1 class="display-5 fw-bold mb-4 text-white">Transforming Lives Through Excellence</h1>
+                        <p class="lead text-white mx-auto" style="max-width: 600px; opacity: 0.9;">Witness the divine touch and professional excellence that goes into every service. Each transformation reflects our commitment to beautifying lives with love and purpose.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-4">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="portfolio-item position-relative overflow-hidden rounded-4 shadow-lg" style="height: 300px;">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Wedding Transformation" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, rgba(170, 123, 23, 0.8), rgba(202, 115, 23, 0.8)); opacity: 0; transition: opacity 0.3s ease;">
+                            <div class="text-center text-white">
+                                <h5 class="fw-bold mb-2">Dream Wedding</h5>
+                                <p class="mb-0">Elegant Celebration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="portfolio-item position-relative overflow-hidden rounded-4 shadow-lg" style="height: 300px;">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Spiritual Counseling" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, rgba(170, 123, 23, 0.8), rgba(202, 115, 23, 0.8)); opacity: 0; transition: opacity 0.3s ease;">
+                            <div class="text-center text-white">
+                                <h5 class="fw-bold mb-2">Spiritual Growth</h5>
+                                <p class="mb-0">Faith-Based Guidance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="portfolio-item position-relative overflow-hidden rounded-4 shadow-lg" style="height: 300px;">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Financial Success" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, rgba(170, 123, 23, 0.8), rgba(202, 115, 23, 0.8)); opacity: 0; transition: opacity 0.3s ease;">
+                            <div class="text-center text-white">
+                                <h5 class="fw-bold mb-2">Financial Growth</h5>
+                                <p class="mb-0">Professional Consultancy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="portfolio-item position-relative overflow-hidden rounded-4 shadow-lg" style="height: 300px;">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Student Success" class="w-100 h-100" style="object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, rgba(170, 123, 23, 0.8), rgba(202, 115, 23, 0.8)); opacity: 0; transition: opacity 0.3s ease;">
+                            <div class="text-center text-white">
+                                <h5 class="fw-bold mb-2">Student Empowerment</h5>
+                                <p class="mb-0">Academic Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro text-center mb-5">
+                        <h6 class="text-uppercase" style="color: var(--bs-primary); font-weight: 600; letter-spacing: 1px;">Our Team</h6>
+                        <h1 class="display-5 fw-bold mb-4" style="color: var(--bs-heading-color);">Dedicated Professionals</h1>
+                        <p class="lead mx-auto" style="max-width: 600px; color: #6c757d;">Meet our team of experienced professionals who are committed to serving you with excellence, love, and unwavering dedication in every aspect of our services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="{% static 'images/1.png' %}" alt="Wedding Coordinator">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <h5>Matyansi Johnson</h5>
+                        <p>Senior Wedding Coordinator</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="{% static 'images/1.png' %}" alt="Spiritual Counselor">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <h5>Pastor Michael Davis</h5>
+                        <p>Nambuule Counselor & Life Coach</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="{% static 'images/1.png' %}" alt="Financial Consultant">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <h5>Mayiga Thompson</h5>
+                        <p>Senior Financial Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%); position: relative; overflow: hidden;">
+        <!-- Background decorative elements -->
+        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: linear-gradient(45deg, rgba(170, 123, 23, 0.1), rgba(202, 115, 23, 0.1)); border-radius: 50%; z-index: 1;"></div>
+        <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: linear-gradient(45deg, rgba(170, 123, 23, 0.05), rgba(202, 115, 23, 0.05)); border-radius: 50%; z-index: 1;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro text-center mb-5">
+                        <h6 class="text-uppercase mb-3" style="color: var(--bs-primary); font-weight: 600; letter-spacing: 1px; font-size: 0.9rem;">Client Testimonials</h6>
+                        <h1 class="display-5 fw-bold mb-4" style="color: var(--bs-heading-color);">What Our Clients Say</h1>
+                        <p class="lead mx-auto" style="max-width: 600px; color: #6c757d;">Hear from those whose lives have been transformed through our comprehensive services and divine care.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100 p-4 rounded-4 shadow-lg border-0 position-relative" style="background: white; transition: all 0.3s ease; overflow: hidden;">
+                        <!-- Quote icon -->
+                        <div class="quote-icon position-absolute" style="top: 20px; right: 20px; font-size: 3rem; color: rgba(170, 123, 23, 0.1); z-index: 1;">
+                            <i class='bx bxs-quote-alt-right'></i>
+                        </div>
+                        
+                        <!-- Stars -->
+                        <div class="stars mb-3" style="color: #ffc107; font-size: 1.2rem;">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        
+                        <!-- Testimonial text -->
+                        <p class="testimonial-text mb-4" style="font-style: italic; color: #555; line-height: 1.7; position: relative; z-index: 2;">
+                            "The Royal Beautifier Enterprises transformed our wedding into a divine celebration that exceeded all our dreams. From the exquisite decor to the spiritual guidance, every detail was handled with love and excellence. Our special day was truly beautified by their professional care and godly touch."
+                        </p>
+                        
+                        <!-- Client info -->
+                        <div class="client-info d-flex align-items-center">
+                            <div class="client-avatar me-3" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid var(--bs-primary);">
+                                <img src="{% static 'images/1.png' %}" alt="Grace and Martin Lubyayi" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold" style="color: var(--bs-heading-color);">Grace and Martin Lubyayi</h6>
+                                <small class="text-muted">Bride & Event Client</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100 p-4 rounded-4 shadow-lg border-0 position-relative" style="background: white; transition: all 0.3s ease; overflow: hidden;">
+                        <!-- Quote icon -->
+                        <div class="quote-icon position-absolute" style="top: 20px; right: 20px; font-size: 3rem; color: rgba(170, 123, 23, 0.1); z-index: 1;">
+                            <i class='bx bxs-quote-alt-right'></i>
+                        </div>
+                        
+                        <!-- Stars -->
+                        <div class="stars mb-3" style="color: #ffc107; font-size: 1.2rem;">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        
+                        <!-- Testimonial text -->
+                        <p class="testimonial-text mb-4" style="font-style: italic; color: #555; line-height: 1.7; position: relative; z-index: 2;">
+                            "The financial consultancy services from Royal Beautifier have been instrumental in growing my business. Their professional advice, combined with their commitment to excellence and integrity, has helped me achieve financial stability and growth beyond my expectations."
+                        </p>
+                        
+                        <!-- Client info -->
+                        <div class="client-info d-flex align-items-center">
+                            <div class="client-avatar me-3" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid var(--bs-primary);">
+                                <img src="{% static 'images/1.png' %}" alt="David Twinomugisha" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold" style="color: var(--bs-heading-color);">David Twinomugisha</h6>
+                                <small class="text-muted">Business Owner & Financial Client</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100 p-4 rounded-4 shadow-lg border-0 position-relative" style="background: white; transition: all 0.3s ease; overflow: hidden;">
+                        <!-- Quote icon -->
+                        <div class="quote-icon position-absolute" style="top: 20px; right: 20px; font-size: 3rem; color: rgba(170, 123, 23, 0.1); z-index: 1;">
+                            <i class='bx bxs-quote-alt-right'></i>
+                        </div>
+                        
+                        <!-- Stars -->
+                        <div class="stars mb-3" style="color: #ffc107; font-size: 1.2rem;">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        
+                        <!-- Testimonial text -->
+                        <p class="testimonial-text mb-4" style="font-style: italic; color: #555; line-height: 1.7; position: relative; z-index: 2;">
+                            "The student empowerment program at The Royal Beautifier Enterprises has been life-changing. The mentorship rooted in faith and dignity, combined with practical life skills training, has equipped me with tools for both academic success and personal growth. I'm truly grateful for their dedication."
+                        </p>
+                        
+                        <!-- Client info -->
+                        <div class="client-info d-flex align-items-center">
+                            <div class="client-avatar me-3" style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 3px solid var(--bs-primary);">
+                                <img src="{% static 'images/1.png' %}" alt="Emily Achen" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold" style="color: var(--bs-heading-color);">Emily Achen</h6>
+                                <small class="text-muted">University Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to action -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="lead mb-4" style="color: #6c757d;">Ready to experience the The Royal Beautifier Enterprises difference?</p>
+                    <a href="#contact" class="golden-button">Share Your Story With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<style>
+/* Testimonial hover effects */
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.testimonial-card:hover .quote-icon {
+    color: rgba(170, 123, 23, 0.2) !important;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.client-avatar {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .client-avatar {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-card {
+        margin-bottom: 2rem;
+    }
+    
+    .quote-icon {
+        font-size: 2rem !important;
+    }
+}
+</style>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro text-center mb-5">
+                        <h6 class="text-uppercase" style="color: var(--bs-primary); font-weight: 600; letter-spacing: 1px;">Insights & Inspiration</h6>
+                        <h1 class="display-5 fw-bold mb-4" style="color: var(--bs-heading-color);">Latest From Royal Beautifier Enterprises</h1>
+                        <p class="lead mx-auto" style="max-width: 600px; color: #6c757d;">Stay updated with our latest insights on personal development, spiritual growth, financial wisdom, and event planning tips that can transform your life.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project5.jpg" alt="">
+                        <a href="#" class="tag">Wedding Planning</a>
+                        <div class="content">
+                            <small>15 Dec, 2023</small>
+                            <h5>Creating Your Dream Wedding with Divine Touch</h5>
+                            <p>Discover how to plan a wedding that reflects both elegance and spiritual significance, creating memories that last a lifetime with professional guidance and godly care.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project4.jpg" alt="">
+                        <a href="#" class="tag">Financial Wisdom</a>
+                        <div class="content">
+                            <small>10 Dec, 2023</small>
+                            <h5>Building Financial Stability Through Faith</h5>
+                            <p>Learn practical financial management strategies that align with Christian principles, helping you achieve prosperity while maintaining integrity and purpose.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project2.jpg" alt="">
+                        <a href="#" class="tag">Personal Development</a>
+                        <div class="content">
+                            <small>05 Dec, 2023</small>
+                            <h5>Empowering Students for Academic Excellence</h5>
+                            <p>Explore our comprehensive approach to student mentorship that combines academic support with character development and spiritual growth for holistic success.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4 text-white">Ready to Transform Your Life?</h2>
+                    <p class="lead text-white mb-4" style="opacity: 0.9;">
+                        Let The Royal Beautifier Enterprises be your partner in creating beautiful moments, achieving financial success, and growing spiritually. Contact us today to discover how we can serve you with excellence, love, and unwavering dedication.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#contact" class="golden-button-2">Schedule Consultation</a>
+                        <a href="tel:+1234567890" class="btn btn-outline-light btn-lg">Call Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
