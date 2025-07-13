@@ -48,10 +48,7 @@ if os.environ.get("RENDER") != "true":
     INSTALLED_APPS += [
         "django_browser_reload",
     ]
-    MIDDLEWARE.insert(1, "django_browser_reload.middleware.BrowserReloadMiddleware")
-
-]
-
+    
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
