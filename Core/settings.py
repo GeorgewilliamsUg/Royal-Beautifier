@@ -28,11 +28,11 @@ SECRET_KEY = 'django-insecure-u-zit4%(c_h&)l4vjv6&(ovrf&qaprayr@oj7qfd0x07kcg)v3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-
-if os.environ.get("RENDER") == "true":
-    ALLOWED_HOSTS.append("royal-beautifier.onrender.com")
-
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'royal-beautifier.onrender.com',  # Add your Render URL here explicitly
+]
 
 # Application definition
 
