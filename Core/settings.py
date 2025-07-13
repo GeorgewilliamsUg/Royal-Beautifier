@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'monica_website',
-    'crispy_forms',
      ]
 
 if os.environ.get("RENDER") != "true":
