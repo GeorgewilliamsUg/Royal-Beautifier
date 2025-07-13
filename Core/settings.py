@@ -43,11 +43,7 @@ INSTALLED_APPS = [
     'monica_website',
      ]
 
-if os.environ.get("RENDER") != "true":
-    INSTALLED_APPS += [
-        "django_browser_reload",
-    ]
-    
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -56,8 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_browser_reload.middleware.BrowserReloadMiddleware',
-]
+    ]
 
 TAILWIND_APP_NAME = "theme"
 CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
