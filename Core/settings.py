@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 
-NPM_BIN_PATH = os.path.normpath(os.path.join(os.environ['APPDATA'], 'npm', 'npm.cmd')) 
+# NPM_BIN_PATH = os.path.normpath(os.path.join(os.environ['APPDATA'], 'npm', 'npm.cmd')) 
 
 from pathlib import Path
 
