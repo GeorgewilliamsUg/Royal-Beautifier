@@ -41,9 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'monica_website',
-    'django_browser_reload',
     'crispy_forms',
-   
+     ]
+
+if os.environ.get("RENDER") != "true":
+    INSTALLED_APPS += [
+        "django_browser_reload",
+    ]
+    MIDDLEWARE.insert(1, "django_browser_reload.middleware.BrowserReloadMiddleware")
 
 ]
 
