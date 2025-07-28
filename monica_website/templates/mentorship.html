@@ -4,26 +4,25 @@
 {% block content %}
 
 <!-- Enhanced Hero Section with Mentor Illustration -->
-<section class="mentorship-hero d-flex align-items-center">
+<section class="mentorship-hero d-flex align-items-center" style="background: white; min-height: 80vh; position: relative; overflow: hidden;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h6 class="text-white mb-3" style="font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase;">Royal Beautifier Enterprises</h6>
-                <h1 class="display-3 text-white mb-4 fw-bold">Faith-Based Mentorship Program</h1>
-                <p class="lead text-white mb-4" style="font-size: 1.3rem; opacity: 0.95;">
+                <h6 class="text-burgundy mb-3" style="font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase;">Royal Beautifier Enterprises</h6>
+                <h1 class="display-3 text-gold mb-4 fw-bold">Faith-Based Mentorship Program</h1>
+                <p class="lead text-gold mb-4" style="font-size: 1.3rem; opacity: 0.95;">
                     Connect with experienced mentors who will guide you through your academic journey with wisdom, faith, and personalized support. Transform your potential into achievement.
                 </p>
                 <div class="d-flex flex-wrap gap-3 mt-4">
-                    <a href="#mentors" class="golden-button-2">Find Your Mentor</a>
-                    <a href="#how-it-works" class="btn btn-outline-light btn-lg">Learn How It Works</a>
+                    <a href="#mentors" class="golden-button">Find Your Mentor</a>
+                    <a href="#how-it-works" class="btn btn-outline">Learn How It Works</a>
                 </div>
-                
                 <!-- Key Benefits Preview -->
                 <div class="row mt-5">
                     <div class="col-4">
                         <div class="text-center">
                             <div class="text-white fw-bold" style="font-size: 2rem;">500+</div>
-                            <small class="text-white opacity-75">Students Mentored</small>
+                            <small class="text-black opacity-75">Students Mentored</small>
                         </div>
                     </div>
                     <div class="col-4">
@@ -40,38 +39,34 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-6">
-                <div class="mentor-illustration">
+            <div class="col-lg-6 position-relative">
+                <div class="mentor-illustration" style="position: relative; min-height: 350px;">
                     <!-- Mentor Avatar -->
-                    <div class="mentor-avatar">
-                        <div class="mentor-badge">Mentor</div>
-                        <img src="{% static 'images/mentor-hero.jpg' %}" alt="Professional Mentor">
+                    <div class="mentor-avatar" style="position: absolute; top: 10%; left: 15%; z-index: 2;">
+                        <div class="mentor-badge bg-primary text-white px-2 py-1 rounded-pill mb-2" style="font-size: 0.9rem;">Mentor</div>
+                        <img src="{% static 'images/mentor-hero.jpg' %}" alt="Professional Mentor" class="rounded-circle shadow" style="width: 120px; height: 120px; object-fit: cover;">
                     </div>
-                    
                     <!-- Student Avatar -->
-                    <div class="student-avatar">
-                        <div class="student-badge">Student</div>
-                        <img src="{% static 'images/student-hero.jpg' %}" alt="Motivated Student">
+                    <div class="student-avatar" style="position: absolute; bottom: 10%; right: 15%; z-index: 2;">
+                        <div class="student-badge bg-secondary text-white px-2 py-1 rounded-pill mb-2" style="font-size: 0.9rem;">Student</div>
+                        <img src="{% static 'images/student-hero.jpg' %}" alt="Motivated Student" class="rounded-circle shadow" style="width: 100px; height: 100px; object-fit: cover;">
                     </div>
-                    
                     <!-- Connection Line -->
-                    <div class="connection-line"></div>
-                    
+                    <div class="connection-line" style="position: absolute; top: 35%; left: 25%; width: 50%; height: 2px; background: rgba(255,255,255,0.5); z-index: 1;"></div>
                     <!-- Floating Elements -->
-                    <div class="floating-element element-1">
+                    <div class="floating-element element-1" style="position: absolute; top: 0; left: 60%; background: rgba(255,255,255,0.9); border-radius: 20px; padding: 0.5rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); font-size: 1rem;">
                         <i class='bx bx-book-open me-1'></i>
                         Academic Excellence
                     </div>
-                    <div class="floating-element element-2">
+                    <div class="floating-element element-2" style="position: absolute; bottom: 0; left: 10%; background: rgba(255,255,255,0.9); border-radius: 20px; padding: 0.5rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); font-size: 1rem;">
                         <i class='bx bx-heart me-1'></i>
                         Spiritual Growth
                     </div>
-                    <div class="floating-element element-3">
+                    <div class="floating-element element-3" style="position: absolute; top: 60%; right: 0; background: rgba(255,255,255,0.9); border-radius: 20px; padding: 0.5rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); font-size: 1rem;">
                         <i class='bx bx-target-lock me-1'></i>
                         Goal Achievement
                     </div>
-                    <div class="floating-element element-4">
+                    <div class="floating-element element-4" style="position: absolute; bottom: 10%; right: 40%; background: rgba(255,255,255,0.9); border-radius: 20px; padding: 0.5rem 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); font-size: 1rem;">
                         <i class='bx bx-group me-1'></i>
                         Life Choices
                     </div>
